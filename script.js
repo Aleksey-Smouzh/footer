@@ -1,7 +1,7 @@
 let footer = document.createElement("footer");
 footer.className = "footer";
 footer.style.background = "#0A0909";
-footer.style.maxWidth = '1500px'
+footer.style.maxWidth = "1500px";
 footer.style.height = "280px";
 footer.style.display = "flex";
 footer.style.flexGrow = "0px";
@@ -30,13 +30,14 @@ const arrayFooterOne = [
   { name: "Instagram", href: "https://www.instagram.com/" },
   { name: "LinkedIn", href: "https://www.linkedin.com/" },
   { name: "Tiktok", href: "https://www.tiktok.com/" },
+
 ];
 for (i = 0; i < arrayFooterOne.length; i++) {
   let columnOneLi = document.createElement("li");
   columnOneLi.className = "columnOne_social-lists";
   columnOneLi.style.marginBottom = "5px";
   columnOneLi.style.listStyleType = "none";
-  
+
   let columnOneA = document.createElement("a");
   columnOneA.className = "columnOne_social-link";
   columnOneA.style.color = "#FFFFFF";
@@ -78,7 +79,7 @@ for (i = 0; i < arrayFooterTwo.length; i++) {
   columnTwoA.style.fontFamily = "Fuzzy Bubbles, cursive";
   columnTwoA.style.fontSize = "20px";
   columnTwoA.style.textDecoration = "none";
-  
+
   columnTwoA.innerText = arrayFooterTwo[i].name;
   columnTwoA.href = arrayFooterTwo[i].href;
 
@@ -95,21 +96,21 @@ columnThreeNav.style.alignItems = "center";
 console.log(columnThreeNav);
 let columnThreeUl = document.createElement("ul");
 columnThreeUl.className = "columnThree_links";
-columnThreeUl.innerHTML = "Go back to:"
+columnThreeUl.innerHTML = "Go back to:";
 columnThreeUl.style.color = "#F50A0A";
-columnThreeUl.style.fontSize = "23px"
+columnThreeUl.style.fontSize = "23px";
 columnThreeUl.style.paddingLeft = "0px";
 console.log(columnThreeUl);
 
 const arrayFooterThree = [
   { name: "Home", href: "./home.html" },
-  { name: "What we do", href: "./what_we_do.html"},
+  { name: "What we do", href: "./what_we_do.html" },
   { name: "About us", href: "./about_us.html" },
   { name: "Contacts", href: "./contacts.html" },
 ];
 for (i = 0; i < arrayFooterThree.length; i++) {
   let columnThreeLi = document.createElement("li");
-  columnThreeLi.className = "columnThree_page-lists"
+  columnThreeLi.className = "columnThree_page-lists";
   columnThreeLi.style.listStyleType = "none";
   columnThreeLi.style.marginBottom = "5px";
 
@@ -119,18 +120,17 @@ for (i = 0; i < arrayFooterThree.length; i++) {
   columnThreeA.style.fontFamily = "Fuzzy Bubbles, cursive";
   columnThreeA.style.fontSize = "20px";
   columnThreeA.style.textDecoration = "none";
-  
+
   columnThreeA.innerText = arrayFooterThree[i].name;
   columnThreeA.href = arrayFooterThree[i].href;
 
   columnThreeLi.appendChild(columnThreeA);
   columnThreeUl.appendChild(columnThreeLi);
-  
 }
 columnThreeNav.appendChild(columnThreeUl);
 footer.appendChild(columnThreeNav);
 
-let copyrightSpan = document.createElement ("span");
-copyrightSpan.className = 'copyright';
-copyrightSpan.innerHTML = "Copyright ©, 2021"
+let copyrightSpan = document.createElement("span");
+copyrightSpan.className = "copyright";
+copyrightSpan.innerHTML = "Copyright ©, 2021";
 columnTwoUl.append(copyrightSpan);
