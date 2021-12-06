@@ -134,3 +134,5 @@ let copyrightSpan = document.createElement("span");
 copyrightSpan.className = "copyright";
 copyrightSpan.innerHTML = "Copyright ©, 2021";
 columnTwoUl.append(copyrightSpan);
+
+
