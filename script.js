@@ -67,6 +67,7 @@ columnTwoUl.style.listStyleType = "none";
 columnTwoUl.style.color = "#F50A0A";
 columnTwoUl.style.fontSize = "23px";
 columnTwoUl.style.paddingLeft = "0px";
+
 const arrayFooterTwo = [
   { name: "+78 (892) 123-45-67", href: "tel:+788921234567" },
   { name: "murzik@puchkin.be", href: "mailto:murzik@puchkin.be" },
